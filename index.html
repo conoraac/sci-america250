@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SCI: America 250 Celebration Campaign Pack</title>
+<title>SCI: America's 250th Celebration Campaign Pack</title>
 <style>
   :root{
-    --navy:#1f3a5f;        /* SCI deep navy */
+    --navy:#1f3a5f;
     --navy2:#2b4d78;
-    --accent:#f58459;      /* SCI warm orange */
-    --red:#b23a3a;         /* restrained patriotic accent */
+    --accent:#f58459;
+    --red:#b23a3a;
     --cream:#f6f1e7;
     --ink:#1d2733;
     --muted:#6b7686;
@@ -22,12 +22,17 @@
   header.top{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:16px;padding:34px 36px;position:relative;overflow:hidden}
   header.top .ghost{position:absolute;right:-10px;top:-30px;font-size:200px;font-weight:800;color:rgba(255,255,255,.06);letter-spacing:-8px;line-height:1}
   header.top h1{margin:0 0 6px;font-size:30px;letter-spacing:.3px}
-  header.top p{margin:4px 0;opacity:.92;font-size:15px;max-width:760px}
+  header.top p{margin:4px 0;opacity:.92;font-size:15px;max-width:780px}
   .pill{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:4px 12px;border-radius:99px;font-size:12.5px;margin:10px 8px 0 0}
   .note{background:#fff6ef;border:1px solid #f3d4be;border-left:4px solid var(--accent);border-radius:10px;padding:14px 18px;margin:22px 0;font-size:14px;color:#7a4a25}
+  .note h3{margin:0 0 8px;font-size:15px;color:#7a4a25}
+  .menu{width:100%;border-collapse:collapse;margin:10px 0 2px;font-size:13.5px}
+  .menu th,.menu td{text-align:left;padding:8px 10px;border-bottom:1px solid #f0dcc9}
+  .menu th{font-size:11px;letter-spacing:.5px;text-transform:uppercase;color:#9a6b44}
+  .menu td.was{color:#a98;text-decoration:line-through;white-space:nowrap}
+  .menu td.now{font-weight:700;color:#7a4a25;white-space:nowrap}
   h2.section{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin:48px 0 4px;font-weight:700}
   h2.section + .sub{color:var(--muted);font-size:14px;margin:0 0 22px}
-  /* ===== Social grid ===== */
   .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
   @media(max-width:760px){.grid{grid-template-columns:1fr}}
   .ig{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(20,40,70,.05)}
@@ -49,11 +54,10 @@
   .creative.alt .ph{background:rgba(31,58,95,.78);border-color:rgba(31,58,95,.35)}
   .ig .acts{display:flex;gap:16px;padding:11px 13px 4px;font-size:18px;color:var(--ink)}
   .ig .acts .save{margin-left:auto}
-  .ig .likes{padding:0 13px;font-size:13px;font-weight:600}
+  .ig .chan{padding:2px 13px 0;font-size:11.5px;font-weight:700;color:var(--accent);letter-spacing:.4px}
   .ig .cap{padding:6px 13px 15px;font-size:13.5px}
   .ig .cap .tags{color:#3b5a98;margin-top:7px;font-weight:500}
   .ig .label{font-size:11px;font-weight:700;color:#fff;background:var(--red);display:inline-block;padding:3px 9px;border-radius:6px;margin:13px 13px 0}
-  /* ===== LinkedIn ===== */
   .li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:24px;box-shadow:0 2px 10px rgba(20,40,70,.05)}
   .li .head{display:flex;gap:12px;align-items:center;margin-bottom:14px}
   .li .ava{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
@@ -61,7 +65,6 @@
   .li .nm span{display:block;font-weight:400;color:var(--muted);font-size:12.5px}
   .li .body{font-size:14.5px;white-space:pre-line}
   .li .tags{color:#3b5a98;font-weight:500;margin-top:12px;font-size:14px}
-  /* ===== Email ===== */
   .mail{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:24px;overflow:hidden;box-shadow:0 2px 10px rgba(20,40,70,.05)}
   .mail .meta{background:#fafbfc;border-bottom:1px solid var(--line);padding:14px 20px;font-size:13px}
   .mail .meta .subj{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:4px}
@@ -69,7 +72,6 @@
   .mail .meta .frm{color:var(--muted);margin-top:6px}
   .mail .content{padding:20px 22px;font-size:14.5px;white-space:pre-line}
   .mail .cta{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:11px 22px;border-radius:8px;text-decoration:none;margin:8px 0}
-  /* ===== Landing page outline ===== */
   .lp{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(20,40,70,.05)}
   .lp .row{padding:18px 22px;border-bottom:1px solid var(--line)}
   .lp .row:last-child{border-bottom:0}
@@ -87,23 +89,35 @@
 
   <header class="top">
     <div class="ghost">250</div>
-    <h1>America 250 Celebration Campaign Pack</h1>
-    <p><strong>Celebrate Your Independence. Discover Your Potential.</strong></p>
-    <p>Supporting hook: <em>America Turns 250. So Do Our Prices.</em> &nbsp;•&nbsp; Run dates: June 23 – July 31, 2026 (heavy push through July 10)</p>
-    <p>A celebration, not a sale. America 250 is the backdrop; the prospect's growth is the hero. Voice: affirm, never shame, anchored in Purpose &amp; Trust.</p>
-    <span class="pill">6 Social posts (FB/IG)</span>
-    <span class="pill">2 LinkedIn long-form</span>
-    <span class="pill">3 Emails</span>
+    <h1>America's 250th Celebration Campaign Pack</h1>
+    <p><strong>Celebrate Our Independence. Discover Your Potential.</strong></p>
+    <p>Supporting hook: <em>America Turns 250. So Do Our Prices.</em> &nbsp;•&nbsp; Book in July 2026, deliver anytime through December 2026.</p>
+    <p>Dr. Bob's 250th anniversary offer for <strong>teams and organizations</strong>, with an individual on-ramp. A celebration, not a sale. Anchored in Purpose and Trust; affirming, never shaming.</p>
+    <span class="pill">Social: Facebook · Instagram · LinkedIn</span>
+    <span class="pill">LinkedIn long-form</span>
+    <span class="pill">Email sequence</span>
     <span class="pill">Landing page outline</span>
   </header>
 
   <div class="note">
-    <strong>The Offer: "250 for 250."</strong> In honor of America's 250th anniversary, the complete experience is available for <strong>$250</strong> (a $510 value). It includes the 4 Colors™ of Insights™ Elite Assessment with a personalized report, the 8 Factors of Engagement® Assessment with full profile, e-learning access to both through the E4 platform, and a live 30-minute coaching debrief. Available through July 31.
+    <h3>The Offer: "250 for 250" for teams and organizations</h3>
+    In honor of America's 250th, every part of the experience is built around the number 250. Book during July; because we're celebrating the whole 250th year, programs can be delivered anytime through December 2026. Booking means the agreement is confirmed and the deposit (50%) is processed by July 31; the balance is due before delivery. Framed as an invitation to invest in your people, not a discount.
+    <table class="menu">
+      <tr><th>Experience</th><th>Standard</th><th>250 Celebration</th></tr>
+      <tr><td>Individual bundle per person: 4 Colors of Insights Elite (incl. 12 Driving Forces) + profile, 8 Factors of Engagement assessment + profile, e-learning for both, 30-minute coaching debrief</td><td class="was">$600+</td><td class="now">$250</td></tr>
+      <tr><td>Bundled team report</td><td class="was">$450</td><td class="now">$250</td></tr>
+      <tr><td>Leading from the Helm data collection (per person)</td><td class="was">$95</td><td class="now">$25</td></tr>
+      <tr><td>Data-collection setup (one-time)</td><td class="was">$1,500</td><td class="now">$250</td></tr>
+      <tr><td>90-minute virtual facilitation (repeatable)</td><td class="was">$1,500</td><td class="now">$1,250</td></tr>
+      <tr><td>Half-day in-person facilitation (per session)</td><td class="was">$5,000</td><td class="now">$2,500</td></tr>
+      <tr><td>Three-day off-site retreat</td><td class="was">$30,000</td><td class="now">$12,500</td></tr>
+      <tr><td>Optional one-hour coaching session</td><td class="was">$650</td><td class="now">$250</td></tr>
+    </table>
   </div>
 
   <!-- ================= SOCIAL ================= -->
-  <h2 class="section">1. Social Posts (Facebook / Instagram)</h2>
-  <p class="sub">Six repeatable posts, each reinforcing one idea: Independence · Potential · Self-awareness · Teams · Leadership · Offer. <strong>The graphics shown are placeholders to convey concept and copy only. Final designs will come from your design team.</strong> Caption + hashtags below each.</p>
+  <h2 class="section">1. Social Posts</h2>
+  <p class="sub">Team-and-organization led, with an individual on-ramp. <strong>The graphics shown are placeholders to convey concept and copy only. Final designs will come from your design team.</strong> Suggested channels noted per post. Note: an Instagram account still needs to be created. Plan a near-daily cadence across Facebook, Instagram, and LinkedIn through July (not a one-time set).</p>
 
   <div class="grid">
 
@@ -114,109 +128,109 @@
       <div class="creative">
         <span class="ph">Placeholder graphic · design TBD</span>
         <div class="bignum">250</div>
-        <div class="kicker">America 250 Celebration</div>
-        <h3>Celebrate Your Independence.<br>Discover Your Potential.</h3>
+        <div class="kicker">America's 250th Celebration</div>
+        <h3>Celebrate Our Independence.<br>Discover Your Potential.</h3>
         <div class="rule"></div>
-        <div class="sm">Special anniversary opportunities, all July.</div>
+        <div class="sm">For teams and organizations. Book in July, deliver all year.</div>
       </div>
       <div class="acts"><span>♡</span><span>💬</span><span>➤</span><span class="save">🔖</span></div>
-      <div class="likes">Liked by leaders everywhere</div>
-      <div class="cap"><strong>sicoraconsulting</strong> For 250 years, America has celebrated freedom, opportunity, and possibility. This July, we're celebrating a different kind of independence: the freedom that comes from understanding yourself, understanding others, and leading with purpose.<br>What independence will you choose this year? 👇 Link in bio.
-        <div class="tags">#CelebrateYourIndependence #DiscoverYourPotential #America250 #LeadershipDevelopment #SelfAwareness</div>
+      <div class="chan">Facebook · Instagram · LinkedIn</div>
+      <div class="cap"><strong>sicoraconsulting</strong> For 250 years, America has celebrated freedom, opportunity, and possibility. This July, we're inviting teams and organizations to celebrate a different kind of independence: the kind that comes from understanding ourselves, understanding each other, and leading with shared purpose.<br>Book during July and deliver anytime in 2026. What independence will your team choose this year?
+        <div class="tags">#CelebrateOurIndependence #DiscoverYourPotential #America250 #Leadership #TeamCulture</div>
       </div>
     </div>
 
     <!-- Post 2 -->
     <div class="ig">
-      <span class="label">Post 2 · Engagement · "What does independence mean to you?"</span>
+      <span class="label">Post 2 · What does independence mean to you?</span>
       <div class="bar"><div class="ava">SCI</div><div class="who">sicoraconsulting<span>Sponsored</span></div><div class="dots">•••</div></div>
       <div class="creative alt">
         <span class="ph">Placeholder graphic · design TBD</span>
         <div class="bignum" style="color:rgba(31,58,95,.07)">?</div>
         <div class="kicker">What does independence mean to you?</div>
-        <h3>Independence from confusion.<br>From conflict.<br>From feeling stuck.</h3>
+        <h3>Independence to align.<br>To connect.<br>To move with purpose.</h3>
         <div class="rule"></div>
       </div>
       <div class="acts"><span>♡</span><span>💬</span><span>➤</span><span class="save">🔖</span></div>
-      <div class="likes">236 likes</div>
-      <div class="cap"><strong>sicoraconsulting</strong> Independence looks different for everyone. For some it's freedom from miscommunication. For others, freedom from a team that's pulling in different directions, or from leadership blind spots no one's named yet.<br>So we'll ask: what kind of independence are you ready for? Tell us in the comments. 👇
-        <div class="tags">#CelebrateYourIndependence #America250 #TeamCulture #Leadership #EmotionalIntelligence</div>
+      <div class="chan">Facebook · LinkedIn</div>
+      <div class="cap"><strong>sicoraconsulting</strong> Independence looks different for every team. For some it's the freedom of clearer communication. For others, it's a team that moves with shared purpose, or leaders and members who understand one another.<br>This July, we're celebrating that kind of independence with teams and organizations. Tap to see how it works. 👇
+        <div class="tags">#CelebrateOurIndependence #America250 #TeamCulture #Leadership #BuildTrustWithPurpose</div>
       </div>
     </div>
 
     <!-- Post 3 -->
     <div class="ig">
-      <span class="label">Post 3 · Individuals · 4 Colors™ of Insights™</span>
+      <span class="label">Post 3 · Individual on-ramp · 4 Colors of Insights</span>
       <div class="bar"><div class="ava">SCI</div><div class="who">sicoraconsulting<span>Sponsored</span></div><div class="dots">•••</div></div>
       <div class="creative">
         <span class="ph">Placeholder graphic · design TBD</span>
         <div class="bignum">4</div>
-        <div class="kicker">For Individuals</div>
-        <h3>The freedom to finally understand yourself.</h3>
+        <div class="kicker">Start with yourself</div>
+        <h3>Discover what drives you, and how you lead.</h3>
         <div class="rule"></div>
-        <div class="sm">4 Colors™ of Insights™</div>
+        <div class="sm">4 Colors of Insights · your personal profile</div>
       </div>
       <div class="acts"><span>♡</span><span>💬</span><span>➤</span><span class="save">🔖</span></div>
-      <div class="likes">181 likes</div>
-      <div class="cap"><strong>sicoraconsulting</strong> Most people spend their lives reading everyone else. Few ever get an honest read on themselves: how they're wired, what drives them, how they show up under pressure.<br>The 4 Colors™ of Insights™ hands you the mirror. Awareness changes everything. ✨ Anniversary pricing this July.
-        <div class="tags">#4Colors #SelfAwareness #DiscoverYourPotential #America250 #PersonalGrowth</div>
+      <div class="chan">Facebook · Instagram</div>
+      <div class="cap"><strong>sicoraconsulting</strong> We all carry an understanding of who we are. The 4 Colors of Insights deepens it, showing what drives you (with your 12 Driving Forces) and how you show up under pressure, in your own personal profile.<br>Take it for yourself this July, then bring your team along. Awareness is where it starts.
+        <div class="tags">#4ColorsOfInsights #DiscoverYourPotential #America250 #SelfAwareness #Leadership</div>
       </div>
     </div>
 
     <!-- Post 4 -->
     <div class="ig">
-      <span class="label">Post 4 · Teams · 8 Factors of Engagement®</span>
+      <span class="label">Post 4 · Teams · 8 Factors of Engagement</span>
       <div class="bar"><div class="ava">SCI</div><div class="who">sicoraconsulting<span>Sponsored</span></div><div class="dots">•••</div></div>
       <div class="creative warm">
         <span class="ph">Placeholder graphic · design TBD</span>
         <div class="bignum">8</div>
-        <div class="kicker" style="color:#fff">For Teams</div>
-        <h3>The freedom of a team moving in the same direction.</h3>
+        <div class="kicker" style="color:#fff">For teams</div>
+        <h3>Shared purpose is what drives engagement.</h3>
         <div class="rule" style="background:#fff"></div>
-        <div class="sm">8 Factors of Engagement®</div>
+        <div class="sm">8 Factors of Engagement · team report</div>
       </div>
       <div class="acts"><span>♡</span><span>💬</span><span>➤</span><span class="save">🔖</span></div>
-      <div class="likes">204 likes</div>
-      <div class="cap"><strong>sicoraconsulting</strong> Most team friction isn't a talent problem. It's a trust-and-engagement problem hiding beneath a healthy-looking surface. The 8 Factors of Engagement® show you what's really happening, so your team can move as one.<br>Celebrate independence with a team that's finally aligned. 🇺🇸
-        <div class="tags">#8FactorsOfEngagement #TeamCulture #Trust #America250 #EmployeeEngagement</div>
+      <div class="chan">LinkedIn · Facebook</div>
+      <div class="cap"><strong>sicoraconsulting</strong> When a team shares a clear purpose and trusts one another, engagement follows, and so does performance. The 8 Factors of Engagement give your team a shared language and a team report to build trust with purpose.<br>And remember: you don't need to be the team leader to be a leader on the team. Celebrate America's 250th by investing in yours.
+        <div class="tags">#8FactorsOfEngagement #BuildTrustWithPurpose #TeamCulture #America250 #Engagement</div>
       </div>
     </div>
 
     <!-- Post 5 -->
     <div class="ig">
-      <span class="label">Post 5 · Leaders · Quote / Leading from the Helm®</span>
+      <span class="label">Post 5 · Leaders · Quote / Leading from the Helm</span>
       <div class="bar"><div class="ava">SCI</div><div class="who">sicoraconsulting<span>Sponsored</span></div><div class="dots">•••</div></div>
       <div class="creative alt">
         <span class="ph">Placeholder graphic · design TBD</span>
         <div class="bignum">“”</div>
-        <div class="kicker">For Leaders</div>
-        <h3>"You can't lead others effectively until you understand how you lead yourself."</h3>
+        <div class="kicker">For leaders at every level</div>
+        <h3>"Leading others well begins with understanding how you lead yourself."</h3>
         <div class="rule"></div>
-        <div class="sm">Dr. Robert Sicora · Leading from the Helm®</div>
+        <div class="sm">Dr. Robert T. Sicora · Leading from the Helm</div>
       </div>
       <div class="acts"><span>♡</span><span>💬</span><span>➤</span><span class="save">🔖</span></div>
-      <div class="likes">312 likes</div>
-      <div class="cap"><strong>sicoraconsulting</strong> The journey to becoming a better leader begins with a deeper understanding of yourself. This July, celebrate the kind of independence that makes you a stronger leader: confident, self-aware, and grounded in purpose.<br>Leading from the Helm®. Anniversary pricing through July 31.
+      <div class="chan">LinkedIn</div>
+      <div class="cap"><strong>sicoraconsulting</strong> Becoming a stronger leader begins with a deeper understanding of yourself, and you don't need a title to lead. This July, celebrate the kind of independence that makes leaders at every level more confident, self-aware, and grounded in purpose.<br>Leading from the Helm. Celebration pricing for teams and organizations all month.
         <div class="tags">#LeadingFromTheHelm #Leadership #BuildTrustWithPurpose #America250</div>
       </div>
     </div>
 
     <!-- Post 6 -->
     <div class="ig">
-      <span class="label">Post 6 · Offer / Urgency</span>
+      <span class="label">Post 6 · Offer</span>
       <div class="bar"><div class="ava">SCI</div><div class="who">sicoraconsulting<span>Sponsored</span></div><div class="dots">•••</div></div>
       <div class="creative">
         <span class="ph">Placeholder graphic · design TBD</span>
         <div class="bignum">250</div>
         <div class="kicker">250 for 250</div>
-        <h3>The whole experience.<br>Just $250.</h3>
+        <h3>Everything built around 250.</h3>
         <div class="rule"></div>
-        <div class="sm">A $510 value, through July 31.</div>
+        <div class="sm">Team programs from $2,500. Individual bundle $250. Book in July.</div>
       </div>
       <div class="acts"><span>♡</span><span>💬</span><span>➤</span><span class="save">🔖</span></div>
-      <div class="likes">259 likes</div>
-      <div class="cap"><strong>sicoraconsulting</strong> 250 for 250 🇺🇸 In honor of America's 250th, get the full experience for just <strong>$250</strong> (a $510 value): the 4 Colors™ of Insights™ Elite Assessment, the 8 Factors of Engagement® Assessment, both e-learning experiences, <em>and</em> a live 30-minute coaching debrief.<br>Discover your true colors and break free from what holds you back. Through July 31. 🔗 Link in bio.
-        <div class="tags">#America250 #CelebrateYourIndependence #DiscoverYourPotential #LimitedTime</div>
+      <div class="chan">LinkedIn · Facebook</div>
+      <div class="cap"><strong>sicoraconsulting</strong> 250 for 250 🇺🇸 In honor of America's 250th, we've built a celebration around the number: the individual bundle for $250 per person, half-day team facilitation for $2,500, and more, all the way up to a three-day off-site.<br>Book during July and deliver anytime in 2026. An invitation to invest in your people. Tap to explore.
+        <div class="tags">#America250 #CelebrateOurIndependence #TeamDevelopment #Leadership</div>
       </div>
     </div>
 
@@ -224,214 +238,166 @@
 
   <!-- ================= LINKEDIN ================= -->
   <h2 class="section">2. LinkedIn (Long-form, Dr. Bob voice)</h2>
-  <p class="sub">Platform-appropriate thought leadership: personal, reflective, no hard sell. Distinct from the punchy social posts above.</p>
+  <p class="sub">Two examples in Robert's voice. Plan a near-daily LinkedIn presence through July for the team and organization push; these are templates to build from.</p>
 
   <div class="li">
     <div class="head"><div class="ava">RS</div><div class="nm">Dr. Robert T. Sicora<span>Founder, Sicora Consulting · Leadership, Engagement &amp; Culture</span></div></div>
-    <div class="body">For 250 years, this country has celebrated independence.
+    <div class="body">This year, the country celebrates 250 years of independence.
 
-I've been thinking about what that word actually means, not for a nation, but for the people I work with every day.
+It's worth pausing on what that word has meant for us as a nation: the freedom to choose our direction, to build something together, to keep becoming who we're capable of becoming. Independence was never the finish line. It was the start of the work.
 
-Because the leaders I meet aren't looking for fireworks. They're looking for a different kind of freedom.
+I think the same is true inside our organizations.
 
-Freedom from the meeting where everyone nods and nothing changes.
-Freedom from the quiet erosion of trust that no one names until performance stalls.
-Freedom from leading on instinct alone, hoping you're reading your people right.
-Freedom from feeling stuck, and not being sure why.
+The teams I work with are reaching for their own kind of independence. The freedom to walk into a hard conversation and come out stronger. The freedom to lead with clarity instead of guesswork. The freedom of a team that trusts one another enough to move with shared purpose.
 
-Here's what I've learned after years of this work: the greatest freedom isn't doing whatever you want. It's becoming who you're actually capable of becoming. And that almost always starts in the same place: understanding yourself, then understanding the people around you.
+That freedom doesn't come from working harder at the same things. It comes from understanding ourselves, understanding each other, and building trust on purpose. Trust first, then purpose. When trust is strong enough, purpose takes over and drives everything else.
 
-That's the whole foundation. Trust, then purpose. When trust is strong enough, purpose takes over and drives everything else.
+So this July, while we celebrate America's 250th, my team and I are inviting organizations to celebrate that kind of independence together, with our 250 for 250 program.
 
-So this July, while we celebrate America's 250th, my team and I are inviting leaders, teams, and organizations to celebrate a different kind of independence: the kind that comes from self-awareness, stronger relationships, and leading on purpose.
+And here's something I believe deeply: you don't need a title to lead this. Some of the most important moments I've seen started with one team member who simply said, "I think we can be better than this."
 
-Whatever "stuck" looks like for you right now, there's a way forward. And it's a better one than working harder at the same thing.
-
-What does independence mean to you this year? I'd genuinely like to know.
-    <div class="tags">#Leadership #America250 #BuildTrustWithPurpose #SelfAwareness #Culture</div></div>
+What would independence look like for your team this year? I'd love to hear it.
+    <div class="tags">#America250 #Leadership #BuildTrustWithPurpose #TeamCulture #Engagement</div></div>
   </div>
 
   <div class="li">
     <div class="head"><div class="ava">RS</div><div class="nm">Dr. Robert T. Sicora<span>Founder, Sicora Consulting · Leadership, Engagement &amp; Culture</span></div></div>
-    <div class="body">Most teams don't struggle because they lack talent.
+    <div class="body">Most teams have plenty of talent. What they're often missing is a shared language for how they work together.
 
-They struggle because they lack understanding of one another.
+We each extend trust a little differently. Some of us build it through results, some through connection, some through steadiness, some through getting the details right. None of those is wrong. But on a team without a shared language, those differences quietly turn into friction, and good people start to wonder whether they're being understood.
 
-I've sat with a lot of leaders who were convinced their team was "basically fine." On the surface, it was. People were polite. Deadlines mostly got hit. But underneath, something was off. Communication was guarded, the same conflicts kept resurfacing, and good people were quietly checking out.
+That's the work we do. The 4 Colors of Insights helps people understand what drives them and how they show up. The 8 Factors of Engagement gives a team the shared language and the team report to build trust with purpose.
 
-Here's the part most people miss: that isn't a character problem. It's a difference problem. We extend trust based on what matters to us, while the people around us are evaluating trust through a completely different lens. A Red builds it through results. A Yellow through connection. A Green through consistency. A Blue through accuracy. Same team, four different definitions of "trustworthy," and no shared language to bridge them.
+When a team gets that language, the conversation changes. People stop asking "what's wrong with them?" and start asking "what am I missing?" That single shift is where alignment, engagement, and momentum come from.
 
-When a team finally gets that language, the conversation changes. People stop asking "what's wrong with them?" and start asking "what am I missing?" That single shift is where alignment, engagement, and momentum come from.
+And it doesn't have to start at the top. You don't need to be the team leader to be a leader on the team.
 
-This is the work we do: the 4 Colors™ of Insights™ to understand how people are wired, and the 8 Factors of Engagement® to understand what keeps them committed.
+To mark America's 250th, we've put it all together as our 250 for 250 program for teams and organizations: assessments and profiles, e-learning, facilitation, and coaching, built around the number 250. Book during July and deliver anytime in 2026.
 
-To mark America's 250th, we've put both together in one place: our "250 for 250" experience: both assessments, both e-learning paths, and a live 30-minute coaching debrief for $250 (a $510 value), through July 31. If your team looks fine on the surface but you suspect there's more underneath, this is a good month to find out.
-
-The strongest teams don't eliminate their differences. They learn how to leverage them.
-    <div class="tags">#TeamEffectiveness #EmployeeEngagement #Trust #Leadership #America250</div></div>
+If your team is good and you sense it could be even better, you're probably right. This is a good month to find out.
+    <div class="tags">#TeamDevelopment #Engagement #BuildTrustWithPurpose #Leadership #America250</div></div>
   </div>
 
   <!-- ================= EMAILS ================= -->
-  <h2 class="section">3. Email Sequence (3)</h2>
-  <p class="sub">A tight three-email arc: Launch → Independence Day → Final countdown. Each opens with an ABT and ends on a Sicora-shaped CTA.</p>
+  <h2 class="section">3. Email Sequence</h2>
+  <p class="sub">Shown as a Launch → July 4 → Last call arc. For the live campaign, run an every-other-day cadence through July across email and social, repeating and reinforcing the offer.</p>
 
   <!-- Email 1 -->
   <div class="mail">
     <div class="meta">
-      <div class="subj">Celebrate your independence and discover your potential</div>
-      <div class="pre">Preview: Our America 250 Celebration starts today. Here's what it means for you.</div>
-      <div class="frm">From: Dr. Robert Sicora, Sicora Consulting &nbsp;•&nbsp; To: Subscribers</div>
+      <div class="subj">Celebrate our independence, and discover your potential</div>
+      <div class="pre">Preview: Our America's 250th celebration is here, for teams and organizations.</div>
+      <div class="frm">From: Dr. Robert T. Sicora, Sicora Consulting &nbsp;•&nbsp; To: Subscribers</div>
     </div>
     <div class="content">For 250 years, America has celebrated freedom, opportunity, and possibility.
 
-This July, we're celebrating a different kind of independence, and we'd love for you to be part of it.
+This July, we're inviting teams and organizations to celebrate a different kind of independence, and we'd love for yours to be part of it.
 
-Not freedom from a place or a rule. The freedom that comes from finally understanding yourself. The confidence that comes from understanding others. The clarity that comes from leading with purpose. The momentum that comes from a team moving in the same direction.
+The freedom that comes from understanding ourselves. The confidence that comes from understanding each other. The clarity that comes from a shared purpose. The momentum of a team moving in the same direction.
 
-That's the independence worth celebrating. And to mark America's 250th anniversary, we've created something special: our <strong>"250 for 250"</strong> experience.
+That's the independence worth celebrating. And to mark America's 250th, we've built our "250 for 250" program around the number 250, for teams and organizations:
 
-For just <strong>$250</strong> (a $510 value), you'll receive:
+• Individual bundle, $250 per person: 4 Colors of Insights Elite (with your 12 Driving Forces) and personal profile, the 8 Factors of Engagement assessment and profile, e-learning for both, and a 30-minute coaching debrief
+• Bundled team report: $250
+• Half-day team facilitation: $2,500, with virtual sessions and multi-day options available
 
-• The 4 Colors™ of Insights™ Elite Assessment + your personalized report
-• The 8 Factors of Engagement® Assessment + full profile
-• Access to the E4 e-learning platform for both
-• A live 30-minute coaching debrief with one of our coaches
+This is an invitation to invest in your people, not a discount. Book during July and deliver anytime in 2026, all year, because we're celebrating the whole 250th year.
 
-Discover your true colors and break free from what's been holding you back, through July 31.
+So let me ask: what would independence look like for your team this year?
 
-This isn't a discount campaign. It's an invitation to invest in the one kind of freedom that changes everything else.
+<a class="cta">Explore the 250 Celebration →</a>
 
-So let me ask: what does independence mean to <em>you</em> this year?
+Celebrate Our Independence. Discover Your Potential.
 
-<a class="cta">Explore the America 250 Celebration →</a>
-
-Celebrate Your Independence. Discover Your Potential.
-
-Dr. Robert Sicora</div>
+Dr. Robert T. Sicora</div>
   </div>
 
   <!-- Email 2 -->
   <div class="mail">
     <div class="meta">
-      <div class="subj">What does independence mean to you?</div>
-      <div class="pre">Preview: A reflection for the 4th, and a different kind of freedom worth pursuing.</div>
-      <div class="frm">From: Dr. Robert Sicora, Sicora Consulting &nbsp;•&nbsp; Send: July 4</div>
+      <div class="subj">Happy Independence Day, from all of us</div>
+      <div class="pre">Preview: We're taking the whole month to celebrate, and we saved you a spot.</div>
+      <div class="frm">From: Dr. Robert T. Sicora, Sicora Consulting &nbsp;•&nbsp; Send: July 4</div>
     </div>
     <div class="content">Happy Independence Day.
 
-Today the country celebrates 250 years of freedom. And like a lot of you, I'll take a moment to be grateful for it.
+Today the country celebrates 250 years of freedom, and I'm grateful for it. In fact, I'm so grateful that I'm taking the whole month to celebrate, and I'd love for you to celebrate with us.
 
-But I've also been thinking about a quieter kind of independence: the kind I see leaders reach for all year long.
+America wasn't built in a day. Freedom has always been a process, a steady act of becoming. The same is true for each of us, and for the teams we're part of.
 
-The freedom to walk into a hard conversation without dreading it.
-The freedom to lead without second-guessing how you're coming across.
-The freedom of a team that trusts each other enough to be honest.
-The freedom of finally getting unstuck after months of spinning in place.
+So here's my invitation for the month of July. Start with yourself. Take the 4 Colors of Insights and discover what drives you and how you lead, for $250. Do it now, this week, and send it to the people you work with and care about.
 
-The greatest freedom isn't doing whatever you want. It's becoming who you're capable of becoming, and helping the people around you do the same. Because when you take care of yourself, you're also taking better care of everyone who counts on you.
+Then, when you're ready, bring your team along. We're holding the team celebration open all month, and because it's America's 250th year, you can book during July and deliver anytime in 2026.
 
-That's the spirit behind our "250 for 250" experience. Through July 31, you can get both of our self-discovery assessments (4 Colors™ of Insights™ and 8 Factors of Engagement®) plus the e-learning and a live coaching debrief, for $250 (a $510 value).
+Take the step for yourself first. We'll hold the door open for your team.
 
-No pressure today. Just a question worth sitting with over the long weekend:
+<a class="cta">Start with yourself →</a>
 
-What does independence mean to <em>you</em> this year?
+Celebrate Our Independence. Discover Your Potential.
 
-<a class="cta">See the America 250 offers →</a>
-
-Celebrate Your Independence. Discover Your Potential.
-
-Dr. Robert Sicora</div>
+Dr. Robert T. Sicora</div>
   </div>
 
   <!-- Email 3 -->
   <div class="mail">
     <div class="meta">
-      <div class="subj">Last call: America 250 pricing ends July 31</div>
-      <div class="pre">Preview: A few days left to celebrate, and to invest in your growth.</div>
-      <div class="frm">From: Dr. Robert Sicora, Sicora Consulting &nbsp;•&nbsp; Send: ~July 28</div>
+      <div class="subj">Last call: book your 250 Celebration by July 31</div>
+      <div class="pre">Preview: Book this month, deliver anytime in 2026.</div>
+      <div class="frm">From: Dr. Robert T. Sicora, Sicora Consulting &nbsp;•&nbsp; Send: late July</div>
     </div>
-    <div class="content">You've had a month to think it over. The America 250 Celebration closes July 31, and I didn't want it to pass without one last note.
+    <div class="content">July is almost over, and with it, the window to lock in our America's 250th celebration pricing.
 
-Maybe you've been meaning to understand your own wiring a little better. Maybe there's a team conversation you've been putting off. Maybe "stuck" is the most honest word for where things are right now.
+Here's the good news: you don't have to deliver the program this month. You just have to book it. Confirm by July 31 with a deposit, and you can run it with your team anytime through the end of 2026.
 
-If so, this is a good week to take the first step, and a better-than-usual time to do it.
+If your team is good and you sense it could be even better, you're probably right. This is the time to find out.
 
-Our "250 for 250" experience is still open through July 31:
+Our "250 for 250" program for teams and organizations:
 
-• 4 Colors™ of Insights™ Elite Assessment + report
-• 8 Factors of Engagement® Assessment + full profile
-• E4 e-learning access for both
-• A live 30-minute coaching debrief
+• Individual bundle, $250 per person: assessments, profiles, e-learning, and a coaching debrief
+• Bundled team report: $250
+• Half-day team facilitation: $2,500, with virtual and multi-day options
 
-Everything for <strong>$250</strong> (a $510 value). After July 31, anniversary pricing ends.
+An invitation to invest in your people. After July 31, celebration pricing closes.
 
-Awareness changes everything. The hardest part is simply deciding to begin.
+<a class="cta">Book your 250 Celebration →</a>
 
-<a class="cta">Claim your America 250 pricing →</a>
+Celebrate Our Independence. Discover Your Potential.
 
-Celebrate Your Independence. Discover Your Potential.
-
-Dr. Robert Sicora</div>
+Dr. Robert T. Sicora</div>
   </div>
 
   <!-- ================= LANDING PAGE ================= -->
   <h2 class="section">4. Landing Page Outline</h2>
-  <p class="sub">Simple, single-scroll page. Clean and professional. America 250 as backdrop, growth as the hero. One message, one path to conversion.</p>
+  <p class="sub">Single-scroll page, team-and-organization led with an individual on-ramp. Celebratory and patriotic in feel; an invitation, not a sale.</p>
 
   <div class="lp">
     <div class="row">
       <div class="tag">Section 1 · Hero</div>
-      <h4>America 250 Celebration</h4>
-      <p><strong>Celebrate Your Independence. Discover Your Potential.</strong></p>
+      <h4>America's 250th Celebration</h4>
+      <p><strong>Celebrate Our Independence. Discover Your Potential.</strong></p>
       <p class="hint">Subhead: For 250 years, America has celebrated freedom, opportunity, and possibility. This July, we're inviting individuals, leaders, teams, and organizations to invest in their own growth. America Turns 250. So Do Our Prices.</p>
       <div class="btnrow"><span class="fill">Learn More</span><span>Schedule a Conversation</span></div>
     </div>
     <div class="row">
       <div class="tag">Section 2 · The Story</div>
       <h4>What Does Independence Mean to You?</h4>
-      <p class="hint">Short emotional block: The freedom that comes from understanding yourself. The confidence that comes from understanding others. The clarity of purposeful leadership. The momentum of a team moving in the same direction. (Reinforces "celebration, not sale.")</p>
+      <p class="hint">Short, celebratory block: The freedom that comes from understanding yourself. The confidence that comes from understanding others. The clarity of a shared purpose. The momentum of a team moving in the same direction. Reinforces "an invitation, not a sale," and ties to building trust with purpose.</p>
     </div>
     <div class="row">
-      <div class="tag">Section 3 · Three Audiences (core conversion block)</div>
-      <h4>Choose Your Path</h4>
-      <p><strong>Individuals:</strong> discover how your personality and motivations shape every area of life. <span class="hint">Featuring 4 Colors™ of Insights™ · Get Unstuck®</span></p>
-      <p><strong>Teams:</strong> build stronger communication, trust, and alignment. <span class="hint">Featuring 4 Colors™ of Insights™ · 8 Factors of Engagement®</span></p>
-      <p><strong>Organizations:</strong> create cultures where people thrive and performance follows. <span class="hint">Featuring Leading from the Helm® · 8 Factors of Engagement®</span></p>
-      <p class="hint">Each card → its own anchor / CTA into the offer + form.</p>
+      <div class="tag">Section 3 · Choose Your Path</div>
+      <h4>Three ways to celebrate</h4>
+      <p><strong>Individuals:</strong> discover how your personality and motivators shape every area of life. <span class="hint">Featuring 4 Colors of Insights · personal profile</span></p>
+      <p><strong>Teams:</strong> build stronger communication, trust, and alignment. <span class="hint">Building Trust with Purpose · featuring 4 Colors of Insights + 8 Factors of Engagement (Leading from the Helm model optional)</span></p>
+      <p><strong>Organizations:</strong> build purposeful cultures of trust and thrive. <span class="hint">Featuring Leading from the Helm + 8 Factors of Engagement</span></p>
+      <p class="hint">Each card anchors to the offer + the relevant call to action.</p>
     </div>
     <div class="row">
       <div class="tag">Section 4 · The Offer</div>
-      <h4>250 for 250: the whole experience for $250</h4>
-      <p>In honor of America's 250th, get it all for <strong>$250</strong> (a $510 value):</p>
-      <p class="hint">• 4 Colors™ of Insights™ Elite Assessment + personalized report &nbsp; • 8 Factors of Engagement® Assessment + full profile &nbsp; • E4 e-learning platform access for both &nbsp; • Live 30-minute coaching debrief.<br>Tagline option (Robert's): "Celebrate 250 Years of Independence by Discovering Your True Colors and Breaking Free from What Holds You Back." Frame as an invitation, not a discount. Countdown / "Promotion Ends July 31."</p>
+      <h4>250 for 250, built around the number 250</h4>
+      <p>An invitation to invest in your people, for teams and organizations (with an individual on-ramp):</p>
+      <p class="hint">Individual bundle $250/person (4 Colors of Insights Elite + 12 Driving Forces + profile, 8 Factors of Engagement assessment + profile, e-learning for both, 30-minute coaching debrief) · bundled team report $250 · Leading from the Helm data collection $25/person · 90-minute virtual facilitation $1,250 · half-day in-person facilitation $2,500 · three-day off-site retreat $12,500. Book during July, deliver anytime in 2026 (deposit confirms it). Frame as celebration, not discount. Countdown: "Book by July 31."</p>
     </div>
     <div class="row">
-      <div class="tag">Section 5 · Founder Video (optional)</div>
+      <div class="tag">Section 5 · Founder Video</div>
       <h4>A word from Dr. Sicora</h4>
-      <p class="hint">Simple, authentic, founder-led. No fireworks, flags, or patriotic music. "For 250 years, America has celebrated independence. But what does independence mean to you?" Close on the campaign tagline.</p>
-    </div>
-    <div class="row">
-      <div class="tag">Section 6 · Proof</div>
-      <h4>Trusted by leaders and organizations</h4>
-      <p class="hint">1–2 approved testimonials (e.g. Pillar Bank, Kathy Vande Berg; Mayor Steve King foreword). Keep it credible and understated.</p>
-    </div>
-    <div class="row">
-      <div class="tag">Section 7 · Lead Capture</div>
-      <h4>Start Your Independence</h4>
-      <p class="hint">GoHighLevel form (name, email, organization, audience type: Individual / Team / Organization) → tag + automated response + PDF delivery + Calendly scheduling. Downloadable one-page PDF + QR code support.</p>
-      <div class="btnrow"><span class="fill">Get the Details</span><span>Book a Conversation</span></div>
-    </div>
-    <div class="row">
-      <div class="tag">Section 8 · Close</div>
-      <h4>Celebrate Your Independence. Discover Your Potential.</h4>
-      <p class="hint">Final restatement of tagline + deadline + single CTA. Footer with trademarks and contact (crew@sicoraconsulting.com · 1-888-724-5384).</p>
-    </div>
-  </div>
-
-  <div class="foot">
-    Sicora Consulting · America 250 Celebration · Draft campaign pack, built June 21, 2026. Voice per brand-voice-guide.md (Purpose &amp; Trust; affirm, never shame).
-  </div>
-
-</div>
-</body>
-</html>
+      <p class="hint">Celebratory and patriotic: Dr. Sicora on camera, upbeat and festive (music and celebratory visuals welcome). "For 250 years, America has celebrated independence. What does independence mean to you, a
