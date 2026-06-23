@@ -103,10 +103,25 @@
   .quote{border-left:3px solid var(--accent);padding:6px 0 6px 16px;margin:14px 0;font-size:14.5px;font-style:italic;color:var(--ink)}
   .quote span{display:block;font-style:normal;font-weight:700;color:var(--navy);margin-top:4px;font-size:13px}
   .foot{color:var(--muted);font-size:12.5px;text-align:center;margin-top:50px}
+  /* client edit mode */
+  #editbar{position:sticky;top:0;z-index:50;background:var(--accent);color:#fff;padding:12px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;box-shadow:0 3px 12px rgba(0,0,0,.18)}
+  #editbar .msg{font-weight:800;font-size:14px;line-height:1.3}
+  #editbar .msg small{display:block;font-weight:400;font-size:12px;opacity:.95}
+  #editbar button{background:#fff;color:var(--accent);border:0;font-weight:700;font-size:13px;padding:8px 14px;border-radius:7px;cursor:pointer}
+  #editbar button.first{margin-left:auto}
+  #editbar button.sec{background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.55)}
+  #editable h1,#editable h3,#editable h4,#editable h5,#editable p,#editable td,#editable th,#editable .cap,#editable .sm,#editable .body,#editable .content,#editable .quote,#editable .feat,#editable .tags,#editable .label,#editable .pill,#editable .flow,#editable .kicker,#editable .chan,#editable .eyebrow,#editable .wk,#editable .price,#editable .cond,#editable .subj,#editable .pre,#editable .frm,#editable a{border-radius:4px;transition:background .12s,box-shadow .12s}
+  #editable h1:hover,#editable h3:hover,#editable h4:hover,#editable h5:hover,#editable p:hover,#editable td:hover,#editable th:hover,#editable .cap:hover,#editable .sm:hover,#editable .body:hover,#editable .content:hover,#editable .quote:hover,#editable .feat:hover,#editable .tags:hover,#editable .label:hover,#editable .pill:hover,#editable .flow:hover,#editable .kicker:hover,#editable .chan:hover,#editable .eyebrow:hover,#editable .wk:hover,#editable .price:hover,#editable .cond:hover,#editable .subj:hover,#editable .pre:hover,#editable .frm:hover,#editable a:hover{box-shadow:0 0 0 2px var(--accent);background:rgba(245,132,89,.12);cursor:text}
+  #editable :focus{outline:2px solid var(--accent);background:#fff7f1}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div id="editbar">
+  <div class="msg">✏️ This page is editable. <small>Click any text and type to change it. Your edits save in this browser automatically.</small></div>
+  <button class="first" onclick="downloadEdited()">Download edited copy</button>
+  <button class="sec" onclick="resetEdits()">Reset to original</button>
+</div>
+<div class="wrap" id="editable" contenteditable="true">
 
   <header class="top">
     <div class="ghost">250</div>
@@ -468,5 +483,22 @@ Sicora Consulting</div>
   </div>
 
 </div>
+<script>
+(function(){
+  var W=document.getElementById('editable');
+  try{var s=localStorage.getItem('sci250edit'); if(s){W.innerHTML=s;}}catch(e){}
+  W.addEventListener('input',function(){try{localStorage.setItem('sci250edit',W.innerHTML);}catch(e){}});
+  window.downloadEdited=function(){
+    var clone=document.documentElement.cloneNode(true);
+    var eb=clone.querySelector('#editbar'); if(eb){eb.remove();}
+    clone.querySelectorAll('script').forEach(function(x){x.remove();});
+    var w=clone.querySelector('#editable'); if(w){w.removeAttribute('contenteditable'); w.removeAttribute('id');}
+    var html='<!DOCTYPE html>\n'+clone.outerHTML;
+    var blob=new Blob([html],{type:'text/html'});
+    var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='America250_Campaign_Pack_edited.html'; a.click();
+  };
+  window.resetEdits=function(){ if(confirm('Reset all edits back to the original version?')){ try{localStorage.removeItem('sci250edit');}catch(e){} location.reload(); } };
+})();
+</script>
 </body>
 </html>
